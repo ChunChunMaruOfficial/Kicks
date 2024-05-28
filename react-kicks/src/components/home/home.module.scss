@@ -1,0 +1,263 @@
+$color_1: var(--Dark-Gray, #232321);
+$color_2: var(--Blue, #4A69E2);
+$color_3: var(--White, #FFF);
+$color_4: var(--Gray, #E7E7E3);
+$color_5: var(--Yellow, #FFA52F);
+$font-family_1: Rubik;
+$font-family_2: "Open Sans";
+$background-color_1: #232321;
+
+:root {
+	--coefficient-first: 0;
+	--coefficient-second: 0px;
+}
+
+
+.main_frame_first {
+	width: 100%;
+}
+
+.new_drops_content {
+	width: 100%;
+}
+
+.main_frame_second {
+	width: 100%;
+}
+
+.product_page_content {
+	width: 100%;
+	margin-top: 5%;
+}
+
+.main_bunner {
+	width: 100%;
+	aspect-ratio: 1320 / 1039;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 8.5%;
+
+	p {
+		color: $color_1;
+		font-family: $font-family_1;
+		font-size: 12vw;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+	span {
+		color: $color_2;
+		font-family: $font-family_1;
+		font-size: 1em;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-transform: uppercase;
+	}
+}
+
+.main_bunner_content {
+	background-image: url('../../assets/image14.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	aspect-ratio: 1320 / 750;
+	border-radius: 64px;
+	position: relative;
+
+	>.main-bunner-right {
+		background-size: 100%;
+		height: 21.3%;
+		width: 12.1%;
+		position: absolute;
+		right: 2.4%;
+
+		&:nth-child(1) {
+			background-image: url('../../assets/Rectangle2.png');
+			bottom: 27.7%;
+		}
+
+		&:nth-child(2) {
+			bottom: 4.3%;
+			background-image: url('../../assets/Rectangle1.png');
+		}
+	}
+}
+
+.main_bunner_text {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 24px;
+	position: absolute;
+	left: 5%;
+	bottom: 5%;
+}
+
+.main_only_text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	p {
+		&:first-of-type {
+			color: $color_3;
+			font-family: $font-family_1;
+			font-size: var(--font-74px);
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+		}
+
+		&:nth-of-type(2) {
+			width: 60%;
+			color: $color_4;
+			font-family: $font-family_2;
+			font-size: var(--font-24px);
+			font-style: normal;
+			text-wrap: wrap;
+			font-weight: 560;
+		}
+	}
+}
+
+.black_button {
+	>span {
+		color: $color_5;
+	}
+}
+
+.main_bunner_left {
+	display: flex;
+	width: 18%;
+	transform: rotate(-90deg);
+	padding: 3%;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0px 0px 16px 16px;
+	background: var(--Dark-Gray, #232321);
+	position: absolute;
+	left: -8.3%;
+	top: 24%;
+
+	p {
+		color: $color_4;
+		font-family: $font-family_1;
+		font-size: var(--font-16px);
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
+}
+
+.new_drops_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	align-self: stretch;
+	margin-bottom: 3%;
+
+	p {
+		width: 65%;
+		color: $color_1;
+		font-family: $font-family_1;
+		font-size: var(--font-74px);
+		font-style: normal;
+		font-weight: 600;
+		line-height: 95%;
+		text-transform: uppercase;
+	}
+}
+
+.new_drops_body {
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 2%;
+}
+
+/*adapt*/
+@media (max-width: 1600px) {
+	:root {
+		--default-vw: -75vw;
+	}
+}
+
+@media (max-width: 1400px) {
+	:root {
+		--default-vw: -77vw;
+	}
+
+	.main_bunner_content {
+		border-radius: 48px;
+	}
+}
+
+@media (max-width: 1200px) {
+	:root {
+		--default-vw: -75vw;
+	}
+
+	.main_bunner_content {
+		border-radius: 42px;
+	}
+}
+
+@media (max-width: 900px) {
+	:root {
+		--default-vw: -90vw;
+		--coefficient-first: 0.7;
+		--coefficient-second: 320px;
+	}
+}
+
+@media (max-width: 768px) {
+	:root {
+		--coefficient-first: 0.7;
+		--coefficient-second: 320px;
+	}
+
+	.main_bunner_content {
+		background-image: url('../../assets/smallbunner.png');
+		aspect-ratio: 358 / 382;
+	}
+
+	.main_bunner_left {
+		top: 15%;
+	}
+
+	.main_bunner_content>.main_bunner_right {
+		height: 11.5%;
+	}
+
+	.main_bunner_content>.main_bunner_right:nth-child(1) {
+		bottom: 18%;
+	}
+
+	.main_bunner_text {
+		gap: 12px;
+	}
+}
+
+@media (max-width: 480px) {
+
+	.main_bunner_content {
+		border-radius: 24px;
+	}
+
+	.main_bunner_text {
+		gap: 6px;
+	}
+}
+
+@media (max-width: 415px) {
+	.classic_button {
+		padding: 3.5%;
+	}
+}

@@ -1,0 +1,128 @@
+$color_1: var(--Dark-Gray, #232321);
+$color_2: var(--Blue, #4A69E2);
+$color_3: var(--White, #FFF);
+$color_4: var(--Gray, #E7E7E3);
+$color_5: var(--Yellow, #FFA52F);
+$font-family_1: Rubik;
+$font-family_2: "Open Sans";
+$background-color_1: #232321;
+$background-color_2: #D2D1D3;
+
+.reviews {
+	width: 97%;
+	margin: 8% 1.5% 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 48px;
+}
+
+.reviews_header {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	p {
+		width: 40%;
+		flex-shrink: 0;
+		color: $color_1;
+		font-family: $font-family_1;
+		font-size: var(--font-74px);
+		font-style: normal;
+		font-weight: 600;
+		line-height: 95%;
+		text-transform: uppercase;
+	}
+}
+.reviews_body {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	gap: 16px;
+}
+.reviews_content {
+	aspect-ratio: 429 / 501;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex: 1 0 0;
+}
+.reviews_content_head {
+	display: flex;
+	padding: 6% 8%;
+	width: 84%;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 8px;
+	border-radius: 32px 32px 0px 0px;
+	background: #FAFAFA;
+}
+.reviews_content_user {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: 8px;
+	align-self: stretch;
+	img {
+		width: 64px;
+		height: 64px;
+		border-radius: 64px;
+	}
+}
+.content_user_text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+	flex: 1 0 0;
+	color: $color_1;
+	font-family: $font-family_1;
+	font-size: var(--font-20px);
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	p {
+		&:nth-of-type(1) {
+			align-self: stretch;
+		}
+		&:nth-of-type(2) {
+			align-self: stretch;
+			color: $color_1;
+			font-family: $font-family_2;
+			font-size: var(--font-18px);
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
+	}
+}
+.reviews_stars {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	align-self: stretch;
+	>p {
+		color: $color_1;
+		font-family: $font-family_2;
+		font-size: var(--font-16px);
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
+}
+.review_hard {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 428 / 325;
+    border-radius: 0px 0px 32px 32px;
+}
+
+@media (max-width: 768px) {
+    .reviews_body {
+        flex-direction: column;
+    }
+
+    .reviews_content {
+        width: 100%;
+    }
+}

@@ -1,0 +1,167 @@
+.maininfo {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+
+    >* {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .account {
+        margin-bottom: 8px;
+
+        >p {
+            color: rgb(35, 35, 33);
+            font-family: Rubik;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 38px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-block: 24px;
+        }
+
+        >span {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 100%;
+
+            >p:first-of-type {
+                color: rgb(35, 35, 33);
+                font-family: Rubik;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 28px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+
+            >p:nth-of-type(2) {
+                color: rgb(35, 35, 33);
+                font-family: Open Sans;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 27px;
+                letter-spacing: 0%;
+                text-align: left;
+                margin-bottom: 16px;
+            }
+        }
+
+        >button {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            border-radius: 8px;
+            background: rgb(35, 35, 33);
+            margin-block: 24px;
+
+            >img {
+                height: 1em;
+                margin-block: auto;
+            }
+
+            &:hover {
+                background-color: rgb(62, 62, 62);
+            }
+
+            font-family: Open Sans;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 27px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+    }
+
+    .totalprice {
+        >p:first-of-type {
+            color: rgb(35, 35, 33);
+            font-family: Rubik;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 38px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-block: 24px;
+        }
+
+        >span {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 100%;
+            justify-content: space-between;
+
+            >p {
+                /* Open Sans/Semibold/20px */
+                color: rgb(35, 35, 33);
+                font-family: Open Sans;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 27px;
+                letter-spacing: 0%;
+                text-align: left;
+                margin-bottom: 16px;
+            }
+        }
+
+        >span:last-of-type>p {
+            /* Rubik/24px */
+            color: rgb(35, 35, 33);
+            font-family: Rubik;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        >a>button {
+            border-radius: 8px;
+            background: rgb(35, 35, 33);
+            margin-block: 4px;
+            width: 100%;
+
+            &:hover {
+                background-color: rgb(62, 62, 62);
+            }
+        }
+
+        >a {
+            color: rgb(35, 35, 33);
+            font-family: Open Sans;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 27px;
+            letter-spacing: 0%;
+            text-align: left;
+            text-decoration-line: underline;
+        }
+
+        >p:last-of-type {
+            opacity: 0;
+            color: rgb(54, 50, 59);
+            font-family: Inter;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0.4px;
+            text-align: left;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .maininfo {
+        width: 100%;
+    }
+}

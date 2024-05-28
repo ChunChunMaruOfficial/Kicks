@@ -1,0 +1,17 @@
+<svg width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip245_3241">
+			<rect id="logos:google-icon" width="32.000000" height="32.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="logos:google-icon" width="32.000000" height="32.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip245_3241)">
+		<path id="Vector" d="M31.98 16.29C31.98 14.98 31.87 14.03 31.64 13.03L16.31 13.03L16.31 18.95L25.31 18.95C25.13 20.42 24.15 22.64 21.97 24.12L21.94 24.32L26.79 27.99L27.12 28.02C30.2 25.24 31.98 21.15 31.98 16.29Z" fill="#4285F4" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M16.31 31.88C20.72 31.88 24.42 30.47 27.12 28.02L21.97 24.12C20.59 25.06 18.74 25.72 16.31 25.72C12 25.72 8.34 22.94 7.03 19.09L6.84 19.11L1.8 22.92L1.74 23.1C4.42 28.31 9.93 31.88 16.31 31.88Z" fill="#34A853" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M7.03 19.09C6.69 18.1 6.49 17.04 6.49 15.94C6.49 14.84 6.69 13.78 7.01 12.79L7 12.58L1.9 8.7L1.74 8.78C0.63 10.94 0 13.37 0 15.94C0 18.51 0.63 20.93 1.74 23.1L7.03 19.09Z" fill="#FBBC05" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M16.31 6.16C19.38 6.16 21.45 7.45 22.62 8.53L27.23 4.14C24.4 1.57 20.72 0 16.31 0C9.93 0 4.42 3.57 1.74 8.78L7.01 12.79C8.34 8.94 12 6.16 16.31 6.16Z" fill="#EB4335" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

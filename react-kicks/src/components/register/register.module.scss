@@ -1,0 +1,197 @@
+.parent {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 44px;
+
+    >div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        >p:first-of-type {
+            color: rgb(35, 35, 33);
+            font-family: Rubik;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 43px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+
+        >p:nth-of-type(2) {
+            color: rgb(35, 35, 33);
+            font-family: Open Sans;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 27px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        >span:first-of-type {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-block: 24px 8px;
+            gap: 16px;
+
+            >button {
+                flex: 1;
+                box-sizing: border-box;
+                background-color: #E7E7E3;
+                align-self: stretch;
+                padding: 16px 48px 16px 48px;
+                border: 1px solid rgb(35, 35, 33);
+                border-radius: 12px;
+                transition: .5s ease-in-out;
+
+                &:hover {
+                    background-color: #efefef;
+                }
+            }
+        }
+
+        >p:nth-of-type(3) {
+            color: rgb(35, 35, 33);
+            font-family: Open Sans;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 27px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        >p:nth-of-type(4),
+        >p:nth-of-type(5),
+        >p:nth-of-type(6) {
+
+            color: rgb(35, 35, 33);
+            font-family: Rubik;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-block: 14px 10px;
+        }
+
+        >div {
+            flex-direction: row;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 36px;
+        }
+
+        >input {
+            margin-block: 10px;
+        }
+
+        >input:last-of-type {
+            margin-block: 10px 4px;
+        }
+
+        >input {
+            color: rgb(35, 35, 33);
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0.5px;
+            text-align: left;
+
+            background-color: #E7E7E3;
+            padding: 10px 16px 10px 16px;
+            box-sizing: border-box;
+            border: 1px solid rgb(35, 35, 33);
+            border-radius: 8px;
+            transition: .3s ease-in-out;
+
+            &:focus {
+                background-color: #e4e4e1;
+            }
+        }
+
+        >span:nth-of-type(2) {
+            margin-top: 0;
+            opacity: 0;
+            transition: .3s ease-in-out;
+            margin-bottom: 16px;
+        }
+
+        >span:nth-of-type(2),
+        >p:nth-of-type(7) {
+            color: rgb(54, 50, 59);
+            font-family: Inter;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0.4px;
+            text-align: left;
+            font-size: 12px;
+        }
+
+        >p:nth-of-type(7) {
+
+            margin-bottom: 12px;
+        }
+
+        >div>span,
+        >span {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            margin-block: 12px;
+
+            >p {
+                color: rgb(35, 35, 33);
+                font-family: Open Sans;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 22px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+        }
+    }
+
+    >div>button,
+    >div>a>button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        margin-top: 12px;
+        padding: 16px 32px 16px 32px;
+        color: rgb(255, 255, 255);
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0.25px;
+        text-align: left;
+        text-transform: uppercase;
+
+        >img {
+            align-self: stretch;
+            height: 1.2em;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .parent {
+        flex-direction: column;
+
+        >div{
+            width: 92.5%;
+        }
+        >div:first-of-type {
+            width: 100%;
+        }
+    }
+}

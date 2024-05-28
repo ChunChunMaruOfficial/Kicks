@@ -1,0 +1,129 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    >p:first-of-type {
+        margin-top: 32px;
+        color: rgb(35, 35, 33);
+        font-family: Rubik;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    >p:nth-of-type(2) {
+        color: rgb(35, 35, 33);
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    >p:nth-of-type(3) {
+        color: rgb(35, 35, 33);
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    >main {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: nowrap;
+        margin-top: 32px;
+        gap: 48px;
+        margin-bottom: 40px;
+        
+    }
+}
+
+.new_drops_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	align-self: stretch;
+	margin-bottom: 3%;
+
+	p {
+		width: 65%;
+		color: #232321;
+		font-family: Rubik;
+		font-size: 74px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 95%;
+	}
+}
+
+.new_drops_body {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+@media (max-width: 1600px) {
+    :root {
+        --default-vw: -75vw;
+    }
+}
+
+@media (max-width: 1400px) {
+    :root {
+        --default-vw: -77vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --default-vw: -75vw;
+    }
+}
+
+@media (max-width: 900px) {
+    :root {
+        --default-vw: -90vw;
+        --coefficient-first: 0.7;
+        --coefficient-second: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .parent>main {
+        flex-direction: column;
+
+        >section {
+            width: 92%;
+
+            >div {
+                flex-direction: row;
+
+                >img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 415px) {
+
+    .classic_button {
+        padding: 3.5%;
+    }
+}

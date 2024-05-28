@@ -1,0 +1,150 @@
+.parent {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 72px;
+
+    >div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+
+        >p:first-of-type {
+            /* Rubik/32px */
+            color: rgb(35, 35, 33);
+            font-family: Rubik;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 38px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        >p:nth-of-type(2) {
+            color: rgb(35, 35, 33);
+            font-family: Open Sans;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 22px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-block: 8px 12px;
+
+            >span {
+                font-size: 12px;
+            }
+        }
+
+        >input {
+            box-sizing: border-box;
+            border: 1px solid rgb(35, 35, 33);
+            border-radius: 8px;
+            background-color: #E7E7E3;
+            padding: 10px 16px 10px 16px;
+            margin-top: 12px;
+            width: 100%;
+
+            position: relative;
+            color: rgb(35, 35, 33);
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0.5px;
+            text-align: left;
+        }
+
+        >p:nth-of-type(3),
+        >p:nth-of-type(4) {
+            opacity: 0;
+            transition: .3s ease-in-out;
+            margin-top: 2px;
+            color: red;
+            font-family: Inter;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+            letter-spacing: 0.4px;
+            text-align: left;
+        }
+
+        >span {
+            margin-block: 12px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            >p {
+                /* [object Object] */
+                color: rgb(35, 35, 33);
+                font-family: Open Sans;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 22px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+
+            &:first-of-type {
+                gap: 11px;
+            }
+
+            >button {
+                flex: 1;
+                box-sizing: border-box;
+                background-color: #E7E7E3;
+                align-self: stretch;
+                padding: 16px 48px 16px 48px;
+                border: 1px solid rgb(35, 35, 33);
+                border-radius: 12px;
+                transition: .5s ease-in-out;
+
+                &:hover {
+                    background-color: #efefef;
+                }
+            }
+
+            &:nth-of-type(2) {
+                gap: 16px;
+                flex-wrap: wrap;
+            }
+        }
+
+        >a>button {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+
+            margin-block: 12px;
+            padding: 16px 32px 16px 32px;
+            color: rgb(255, 255, 255);
+            font-family: Rubik;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17px;
+            letter-spacing: 0.25px;
+            text-align: left;
+            text-transform: uppercase;
+
+            >img {
+                align-self: stretch;
+                height: 1.2em;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .parent {
+        flex-direction: column;
+
+        >div{
+            width: 90%;
+        }
+        >div:first-of-type {
+            width: 100%;
+        }
+    }
+}
